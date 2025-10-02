@@ -9,6 +9,7 @@ import Button from "../components/common/Button";
 import Movie_recommender_image from "../assets/Movie-recommender.png";
 import Code_analyzer from "../assets/code analyzer.png";
 import Chat_bot_img from "../assets/chat_bot.png";
+import pnemonia_img from "../assets/pnemonia_detect.png";
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -65,6 +66,23 @@ const Projects: React.FC = () => {
       github_url: "https://github.com/Za-heer/AI_Assignment_Checker.git",
       live_url: "https://za-heer-ai-assignment-checker.hf.space/",
       image_url: Code_analyzer,
+    },
+    {
+      id: 4,
+      title: "Pnemonia Dectection",
+      description:
+        "Built with FastAPI and deep learning to predict pneumonia from chest X-rays with confidence score and responsive UI.",
+      technologies: [
+        "Python",
+        "FastAPI",
+        "TensorFlow / Keras",
+        "NumPy, Pillow",
+        "HTML, CSS, Jinja2",
+        "Render",
+      ],
+      github_url: "https://github.com/Za-heer/Pnenomia_detection.git",
+      live_url: "https://pnenomia-detection.onrender.com",
+      image_url: pnemonia_img,
     },
   ];
 
