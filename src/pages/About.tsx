@@ -3,6 +3,7 @@
 import type React from "react";
 import { motion } from "framer-motion";
 import { Brain, Bot, BarChart3, Code2 } from "lucide-react";
+import about_img from "../assets/about.jpg";
 
 const About: React.FC = () => {
   const skills = [
@@ -64,7 +65,7 @@ const About: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <img
-                src="./about.jpg"
+                src={about_img}
                 alt="About me"
                 className="rounded-2xl shadow-2xl"
               />

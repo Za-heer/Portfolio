@@ -6,6 +6,9 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { type Project } from "../services/api";
 import Button from "../components/common/Button";
+import Movie_recommender_image from "../assets/Movie-recommender.png";
+import Code_analyzer from "../assets/code analyzer.png";
+import Chat_bot_img from "../assets/chat_bot.png";
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -27,7 +30,7 @@ const Projects: React.FC = () => {
       ],
       github_url: "https://github.com/Za-heer/Chatbot-frontend",
       live_url: "https://chatbot-frontend-wheat.vercel.app/",
-      image_url: "/chat_bot.png",
+      image_url: Chat_bot_img,
     },
     {
       id: 2,
@@ -45,7 +48,7 @@ const Projects: React.FC = () => {
       ],
       github_url: "https://github.com/Za-heer/Movie-recommender.git",
       live_url: "https://movie-recommender-axa4.onrender.com",
-      image_url: "/Movie-recommender.png",
+      image_url: Movie_recommender_image,
     },
     {
       id: 3,
@@ -61,7 +64,7 @@ const Projects: React.FC = () => {
       ],
       github_url: "https://github.com/Za-heer/AI_Assignment_Checker.git",
       live_url: "https://za-heer-ai-assignment-checker.hf.space/",
-      image_url: "/code analyzer.png",
+      image_url: Code_analyzer,
     },
   ];
 

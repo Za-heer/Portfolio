@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import Button from "../components/common/Button";
 import { SOCIAL_LINKS } from "../utils/constants";
+import resume from "../assets/Zaheer AI.pdf";
+import profile_img from "../assets/profile.jpeg";
 
 const Home: React.FC = () => {
   return (
@@ -36,7 +38,7 @@ const Home: React.FC = () => {
                     View My Work <ArrowRight className="ml-2" size={20} />
                   </Button>
                 </a>
-                <a href="../../public/Zaheer AI.pdf" download>
+                <a href={resume} download>
                   <Button
                     variant="outline"
                     className="w-full sm:w-auto bg-transparent"
@@ -80,7 +82,7 @@ const Home: React.FC = () => {
             >
               <div className="w-80 h-80 mx-auto bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center">
                 <img
-                  src="./profile.jpeg"
+                  src={profile_img}
                   alt="Profile"
                   className="w-72 h-72 rounded-full object-cover border-4 border-white dark:border-dark-800"
                 />
