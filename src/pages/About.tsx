@@ -79,33 +79,32 @@ const About: React.FC = () => {
               <h2 className="text-3xl font-bold mb-6">My Journey</h2>
               <div className="space-y-4 text-gray-600 dark:text-gray-300">
                 <p>
-                  📊 Statistics Foundation → Began my academic journey with a BS
-                  in Statistics, building strong analytical and problem-solving
+                  Statistics Foundation → Began my academic journey with a BS in
+                  Statistics, building strong analytical and problem-solving
                   skills.
                 </p>
 
                 <p>
-                  💻 Web Development → Completed a 1-year course in MERN stack,
+                  Web Development → Completed a 1-year course in MERN stack,
                   gaining experience in building scalable and interactive web
                   applications.
                 </p>
 
                 <p>
-                  🤖 AI & Data Science → Transitioned into AI & Data Science,
-                  where I learned machine learning, deep learning, NLP, and
-                  computer vision.
+                  AI & Data Science → Transitioned into AI & Data Science, where
+                  I learned machine learning, deep learning, NLP, and computer
+                  vision.
                 </p>
 
                 <p>
-                  🚀 AI Engineer → Currently working on Generative & Agentic AI,
+                  AI Engineer → Currently working on Generative & Agentic AI,
                   LLMs, and AI deployment, with projects focused on fine-tuning,
                   RAG pipelines, and intelligent systems.
                 </p>
 
                 <p>
-                  🌟 Future Vision → Striving to become an AI expert and
-                  eventually found my own startup to deliver impactful AI
-                  solutions.
+                  Future Vision → Striving to become an AI expert and eventually
+                  found my own startup to deliver impactful AI solutions.
                 </p>
               </div>
             </motion.div>

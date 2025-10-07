@@ -4,9 +4,6 @@ function Footer() {
       <p className="text-sm font-medium">
         © 2025 Zaheer Khan. All rights reserved.
       </p>
-      <p className="text-xs mt-1 opacity-80">
-        Made with ❤️ using React & TailwindCSS
-      </p>
     </footer>
   );
 }

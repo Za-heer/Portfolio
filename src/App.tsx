@@ -5,6 +5,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/common/Footer";
+import Chatbot from "./components/common/Chatbot";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <section id="contact" aria-label="Contact"></section>
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }
