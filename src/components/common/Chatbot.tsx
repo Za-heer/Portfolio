@@ -46,6 +46,17 @@ const Chatbot: React.FC = () => {
     }
   }, [open]);
 
+  const checkServerHealth = async (): Promise<boolean> => {
+    try {
+      const res = await axios.get(`${API_URL.replace("/chat", "")}/healthz`, {
+        timeout: 5000,
+      });
+      return res.status === 200;
+    } catch {
+      return false;
+    }
+  };
+
   const sendMessage = async () => {
     if (!input.trim()) return;
 
@@ -58,6 +69,20 @@ const Chatbot: React.FC = () => {
     setLoading(true);
 
     try {
+      // 💤 Check if the backend is awake
+      const isAlive = await checkServerHealth();
+      if (!isAlive) {
+        setMessages([
+          ...newMessages,
+          {
+            sender: "bot",
+            text: "⏳ Waking up the bot, please wait 20–40 seconds...",
+          },
+        ]);
+        // give Render a few seconds to wake up
+        await new Promise((res) => setTimeout(res, 30000));
+      }
+
       const res = await axios.post(API_URL, {
         message: input,
         session_id: "portfolio_user",
@@ -72,7 +97,7 @@ const Chatbot: React.FC = () => {
     } catch (err) {
       setMessages([
         ...newMessages,
-        { sender: "bot", text: "Error connecting to server." },
+        { sender: "bot", text: "⚠️ Error connecting to server." },
       ]);
     } finally {
       setLoading(false);
