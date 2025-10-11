@@ -3,7 +3,7 @@
 import type React from "react";
 import { motion } from "framer-motion";
 import { Brain, Bot, BarChart3, Code2 } from "lucide-react";
-import about_img from "../assets/about.jpg";
+import about_img from "../assets/about.jpeg";
 
 const About: React.FC = () => {
   const skills = [
