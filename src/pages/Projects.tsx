@@ -10,6 +10,7 @@ import Movie_recommender_image from "../assets/Movie-recommender.png";
 import Code_analyzer from "../assets/code analyzer.png";
 import Chat_bot_img from "../assets/chat_bot.png";
 import pnemonia_img from "../assets/pnemonia_detect.png";
+import urdu_bot from "../assets/kb_urdu.jpeg";
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -77,12 +78,30 @@ const Projects: React.FC = () => {
         "FastAPI",
         "TensorFlow / Keras",
         "NumPy, Pillow",
-        "HTML, CSS, Jinja2",
+        "React Js",
+        "Tailwind",
         "Render",
       ],
       github_url: "https://github.com/Za-heer/Pnenomia_detection.git",
       live_url: "https://pnenomia-detection.onrender.com",
       image_url: pnemonia_img,
+    },
+    {
+      id: 5,
+      title: "Urdu QA Bot",
+      description:
+        "Urdu QA Bot – An intelligent Urdu Question Answering system that retrieves precise answers from a custom dataset. It uses semantic search powered by intfloat/multilingual-e5-base embeddings to understand natural Urdu queries and return the most relevant answer along with related responses",
+      technologies: [
+        "Python",
+        "FastAPI",
+        "Sentence Transformers",
+        "FAISS",
+        "JSON",
+        "Hugging Face Transformers",
+      ],
+      github_url: "https://github.com/bilalattari/QA-bot.git",
+      live_url: "https://za-heer-qa-bot.hf.space/query",
+      image_url: urdu_bot,
     },
   ];
 
