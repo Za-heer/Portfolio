@@ -2,14 +2,9 @@
 
 import type React from "react";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Download,
-  Github,
-  Linkedin,
-  Mail,
-  BrainCircuit,
-} from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
+import { SiHuggingface } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa";
 import Button from "../components/common/Button";
 import { SOCIAL_LINKS } from "../utils/constants";
 import resume from "../assets/Zaheer AI.pdf";
@@ -84,7 +79,15 @@ const Home: React.FC = () => {
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-gray-100 dark:bg-dark-800 hover:bg-primary-600 hover:text-white transition-all duration-200"
                 >
-                  <BrainCircuit size={24} />
+                  <SiHuggingface size={24} />
+                </a>
+                <a
+                  href={SOCIAL_LINKS.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-gray-100 dark:bg-dark-800 hover:bg-primary-600 hover:text-white transition-all duration-200"
+                >
+                  <FaWhatsapp size={24} />
                 </a>
               </div>
             </motion.div>

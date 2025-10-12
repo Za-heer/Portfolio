@@ -22,6 +22,7 @@ export const SOCIAL_LINKS = {
   huggingFace: "https://huggingface.co/Za-heer",
   kaggle: "https://www.kaggle.com/zaheerbalti",
   email: "mydocument783@gmail.com",
+  whatsapp: "https://wa.me/923412324184",
 }
 
 export const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000"
