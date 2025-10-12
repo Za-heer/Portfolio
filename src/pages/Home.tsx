@@ -79,7 +79,9 @@ const Home: React.FC = () => {
                   <Mail size={24} />
                 </a>
                 <a
-                  href={`mailto:${SOCIAL_LINKS.huggingFace}`}
+                  href={SOCIAL_LINKS.huggingFace}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full bg-gray-100 dark:bg-dark-800 hover:bg-primary-600 hover:text-white transition-all duration-200"
                 >
                   <BrainCircuit size={24} />
